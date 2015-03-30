@@ -1,4 +1,4 @@
-@extends('layout.master-top')
+@extends('layout.master-module')
 @section('content')
 
     <!-- header -->
@@ -26,16 +26,16 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12">
-            <ul class="nav nav-tabs navbar-default">
-                <li role="presentation"><a class="atab" href="#">ข้อมูลเรือ O</a></li>
-                <li role="presentation"><a class="atab" href="#">ข้อมูลสินค้า</a></li>
-                <li role="presentation"><a class="atab" href="#">ผู้โดยสาร</a></li>
-                <li role="presentation"><a class="atab" href="#">เอกสารแนบ</a></li>
-                <li role="presentation"><a class="atab" href="#">เงินมัดจำ</a></li>
-                <li role="presentation"><a class="atab" href="#">หมายเหตุ</a></li>
-                <li role="presentation"><a class="atab" href="#">แบบฟอร์มขออนุญาต</a></li>
-                <li role="presentation"><a class="atab" href="#">แก้ไขหมายกำหนดการ</a></li>
-                <li role="presentation"><a class="atab" href="#">สถานะ</a></li>
+            <ul class="nav nav-tabs navbar-inverse-blue">
+                <li role="presentation"><a class="a-tab" href="#">ข้อมูลเรือ O</a></li>
+                <li role="presentation"><a class="a-tab" href="#">ข้อมูลสินค้า</a></li>
+                <li role="presentation"><a class="a-tab" href="#">ผู้โดยสาร</a></li>
+                <li role="presentation"><a class="a-tab" href="#">เอกสารแนบ</a></li>
+                <li role="presentation"><a class="a-tab" href="#">เงินมัดจำ</a></li>
+                <li role="presentation"><a class="a-tab" href="#">หมายเหตุ</a></li>
+                <li role="presentation"><a class="a-tab" href="#">แบบฟอร์มขออนุญาต</a></li>
+                <li role="presentation"><a class="a-tab" href="#">แก้ไขหมายกำหนดการ</a></li>
+                <li role="presentation"><a class="a-tab" href="#">สถานะ</a></li>
             </ul>
         </div>   
         <div class="col-lg-12 col-md-12 hr-topic"></div>

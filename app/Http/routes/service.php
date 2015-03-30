@@ -20,4 +20,16 @@ Route::group(array('prefix' => 'service'), function() {
             return View::make('service.service-request-data');
     }));
     
+    Route::get('service-request-passenger', array(
+        'as' => 'service-request-passenger',
+        function() {
+            return View::make('service.service-request-passenger');
+    }));
+    
+    Route::get('service-request-money', array(
+        'as' => 'service-request-money',
+        function() {
+            return View::make('service.service-request-money');
+    }));
+    
 });
