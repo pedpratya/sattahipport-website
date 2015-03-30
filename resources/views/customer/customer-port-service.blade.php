@@ -1,5 +1,4 @@
 @extends('layout.master')
-@section('breadcrumbs', Breadcrumbs::render('system-admin'))
 @section('content')
 
 <!-- header -->

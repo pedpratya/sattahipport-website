@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('breadcrumbs', Breadcrumbs::render('organization'))
+
 @section('content')
 
 <!-- header -->

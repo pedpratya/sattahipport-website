@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('breadcrumbs', Breadcrumbs::render('organization'))
+
 @section('content')
 <!-- header -->
 <div class="col-lg-12 col-md-12">
