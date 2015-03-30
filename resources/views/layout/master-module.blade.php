@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="{!! asset('css/sb-admin.css') !!}" rel="stylesheet">
-    <link href="{!! asset('css/style.css') !!}" rel="stylesheet">
+    <!-- <link href="{!! asset('css/style.css') !!}" rel="stylesheet"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,21 +39,14 @@
         </nav>
 
         <div id="page-wrapper">
-
-            <div class="container-fluid">
+            
                 <div style="margin-top:30px;">
  
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        @yield('content')
-                    </div>
+                    
+                <div class="container container-inner">
+                  @yield('content')
                 </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /.container-fluid -->
 
         </div>
         <!-- /#page-wrapper -->
