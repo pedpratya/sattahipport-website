@@ -41,19 +41,19 @@
         <div class="col-lg-12 col-md-12">
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-2 col-md-2"><label>ผู้รับเงิน</label></div>
+                    <div class="col-lg-2 col-md-2" style="text-align: right; margin-right: 0.5cm;"><label>ผู้รับเงิน</label></div>
                     <div class="col-lg-9 col-md-9 right-inner-addon ">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                         <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-2 col-md-2"><label>จำนวนเงิน</label></div>
+                    <div class="col-lg-2 col-md-2" ><label>จำนวนเงิน</label></div>
                     <div class="col-lg-9 col-md-9"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-2 col-md-2"><label>วันที่</label></div>
-                    <div class="col-lg-10 col-md-10 input-group">
+                    <div class="col-lg-2 col-md-2" style="text-align: right; margin-right: 0.5cm;"><label>วันที่</label></div>
+                    <div class="col-lg-9 col-md-9 input-group">
                         <input type="text" class="form-control">
                         <div class="input-group-btn">
                           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
@@ -62,8 +62,8 @@
                 </div>
             </div>    
             <div class="form-group">
-                <div class="col-lg-2 col-md-2"><label>จำนวนเงินวางมัดจำ</label></div>
-                <div class="col-lg-10 col-md-10"><input class="form-control" type="text" ></div>
+                <div class="col-lg-2 col-md-2" style="text-align: right; margin-right: 0.5cm;"><label>จำนวนเงินวางมัดจำ</label></div>
+                <div class="col-lg-9 col-md-9"><input class="form-control" type="text" ></div>
             </div>
             <div class="form-group text-right">
                 <button type="button" class="btn btn-primary">Submit</button>
