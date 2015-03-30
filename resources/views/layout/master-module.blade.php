@@ -35,22 +35,20 @@
         <nav class="navbar navbar-inverse navbar-fixed-top navbar-inverse-blue" role="navigation">
             <!-- Top Menu Items -->
             @include('inc.topbar')
-            
         </nav>
 
         <div id="page-wrapper">
-            
-                <div style="margin-top:30px;">
- 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 content-center">
+                        @yield('content')
+                    </div>
                 </div>
-                    
-                <div class="container container-inner">
-                  @yield('content')
-                </div>
-
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 

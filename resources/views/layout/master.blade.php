@@ -1,52 +1,77 @@
-<!-- Stored in app/views/layouts/master.blade.php -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sattahip Port</title>
-		
-		<!-- Bootstrap -->
-		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/bootstrap-theme.min.css') }}" rel="stylesheet">
+<html lang="en">
 
-		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+<head>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-    </head>
-    <body> <!-- แบ่ง 3 ส่วน -->
-		<div class="container"><!-- container -->
-		<!-- ส่วนที่ 1 -->
-		 @include('inc.topbar')
-		<!-- Bread crumb -->
-	      <div id="breadcrumb">
-	      	<div class="row container-breadcrumb">
-                @yield('breadcrumbs')
-			</div>
-	      </div><!-- End Bread crumb -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<!-- container Content-->
-		  <div class="container-content">             
-              	<div class="left-menu-box col-lg-2 col-md-2 col-sm-2">
-                  <!-- ส่วนที่ 2 Left Manu-->
-                    @include('inc.left_manu')
-              	</div>
-            	<div class="container-fluid container-content col-lg-10 col-md-10">
-            	  <!-- ส่วนที่ 3 Content-->
-                	@yield('content')
+    <title>Sattahipport</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{!! asset('css/bootstrap.min.css') !!}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{!! asset('css/sb-admin.css') !!}" rel="stylesheet">
+    <!-- <link href="{!! asset('css/style.css') !!}" rel="stylesheet"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="no-wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-inverse-blue" role="navigation">
+            <!-- Top Menu Items -->
+            @include('inc.topbar')
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div style="margin-top:50px;"></div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        @yield('inc.left_menu')
+                    </div>
+                    <div class="col-lg-10">
+                        @yield('content')
+                    </div>
                 </div>
-		  </div><!-- End container Content-->
-		</div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
-	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            var height_document = $( document ).height(),
+                height_content  = $('#content').height();
+            
+            if (height_document > height_content) {
+                $('#content').height(height_document - 140);
+            }
+        });
+    </script>
+</body>
+
 </html>

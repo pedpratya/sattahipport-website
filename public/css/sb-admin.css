@@ -404,10 +404,14 @@ legend.scheduler-border {
    top: 10px;   
 }
 
+.content-center{
+    padding-top:60px;
+    /*top: 50px;*/
+}
 
 .hr-topic {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: 0;
   border-top: 1px solid #eee;
 }
@@ -438,3 +442,8 @@ legend.scheduler-border {
     pointer-events: none;
 }
 /*--End input inner-addon--*/
+
+.a-tab{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
