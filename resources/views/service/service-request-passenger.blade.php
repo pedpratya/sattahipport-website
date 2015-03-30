@@ -3,7 +3,7 @@
 <!-- header -->
     <div class="col-lg-12 col-md-12">
         <div class="col-lg-9 col-md-9">
-                <label>คำร้องขอนำเรือเข้า/ออก จากท่า [Berth/Sailing Application]</label>
+            <label>คำร้องขอนำเรือเข้า/ออก จากท่า [Berth/Sailing Application]</label>
         </div>
         <div class="col-lg-3 col-md-3">
             <label>Temperary Code : xxx xxx xxx</label>
@@ -11,7 +11,6 @@
     </div><!-- End header -->
     <form class="form-horizontal">
     <div class="col-lg-12 col-md-12 hr-topic"></div>
-
         <div class="col-lg-12 col-md-12">
             <div class="form-group">
                 <p>ข้าพเจ้าขอยื่นคำร้องขอนำเรือดังต่อไปนี้ &nbsp;&nbsp;
@@ -41,67 +40,66 @@
         <div class="col-lg-12 col-md-12">     
             <div class="col-lg-6 col-md-6">
                 <div class="col-lg-11 col-md-11">
-                        <div class="form-group">                
-                            <div class="col-lg-4 col-md-4"><label  class="col-lg-12">จำนวนคนโดยสารขาเข้า</label><label>ARRIVAL PASSENGERS</label></div>
-                            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-                            <div class="col-lg-12 col-md-12 text-right">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>  
-                        
-                            <br>
-                            <table class="table table-hover">
-                                <th width="70%">Name</th>
-                                <th>Type</th>
-                                <tr>
-                                    <td>Mr.</td>
-                                    <td>ลูกเรือ</td>
-                                </tr>
-                                <tr>
-                                    <td>Mr.</td>
-                                    <td>ลูกเรือ</td>
-                                </tr>
-                                <tr>
-                                    <td>Mr.</td>
-                                    <td>ผู้โดยสาร</td>
-                                </tr>
-                            </table>				
+                    <div class="form-group">                
+                        <div class="col-lg-4 col-md-4"><label  class="col-lg-12">จำนวนคนโดยสารขาเข้า</label><label>ARRIVAL PASSENGERS</label></div>
+                        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+                        <div class="col-lg-12 col-md-12 text-right">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div> 
+                    <table class="table">
+                        <th width="70%" class="active">Name</th>
+                        <th class="active">Type</th>
+                        <tr>
+                            <td>Mr.</td>
+                            <td>ลูกเรือ</td>
+                        </tr>
+                        <tr>
+                            <td>Mr.</td>
+                            <td>ลูกเรือ</td>
+                        </tr>
+                        <tr>
+                            <td>Mr.</td>
+                            <td>ผู้โดยสาร</td>
+                        </tr>
+                    </table>				
                 </div>    
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="col-lg-1 col-md-1"></div>
                 <div class="col-lg-11 col-md-11">
-                        <div class="form-group">                
-                            <div class="col-lg-4 col-md-4"><label  class="col-lg-12">จำนวนคนโดยสารขาออก</label><label>DEPARTTURE PASSENGERS</label></div>
-                            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-                            <div class="col-lg-12 col-md-12 text-right">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>  
-                        
-                            <br>
-                            <table class="table table-hover">
-                                <th width="70%">Name</th>
-                                <th>Type</th>
-                                <tr>
-                                    <td>Mr.</td>
-                                    <td>ลูกเรือ</td>
-                                </tr>
-                                <tr>
-                                    <td>Mr.</td>
-                                    <td>ลูกเรือ</td>
-                                </tr>
-                                <tr>
-                                    <td>Mr.</td>
-                                    <td>ผู้โดยสาร</td>
-                                </tr>
-                            </table>				
+                    <div class="form-group">                
+                        <div class="col-lg-4 col-md-4"><label  class="col-lg-12">จำนวนคนโดยสารขาออก</label><label>DEPARTTURE PASSENGERS</label></div>
+                        <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+                        <div class="col-lg-12 col-md-12 text-right">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <th width="70%" class="active">Name</th>
+                        <th class="active">Type</th>
+                        <tr>
+                            <td>Mr.</td>
+                            <td>ลูกเรือ</td>
+                        </tr>
+                        <tr>
+                            <td>Mr.</td>
+                            <td>ลูกเรือ</td>
+                        </tr>
+                        <tr>
+                            <td>Mr.</td>
+                            <td>ผู้โดยสาร</td>
+                        </tr>
+                    </table>				
                 </div> 
             </div>
+        </div>
+        <div class="col-lg-12" align="center">
+            <p><font color="red">**หมายเหตุ** ทำงานตามที่เลือก เข้า หรือ ออก จากท่า </font></p>
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
         <div class="container-fluid">
@@ -178,44 +176,51 @@
 
     </form> 
     
+<!-- popup Add -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Add Passengers</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add Passengers</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">ชื่อ<br><font size="2">NAME</font></label>
+                        <label for="inputEmail3" class="col-sm-3 control-label" style=" margin-right: 0.5cm;">ชื่อ<br><font size="2">NAME</font></label>
                             <div class="col-sm-8">
                               <input type="text" class="form-control">
                             </div>
                     </div>
                     <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-3 control-label">สัญชาติ<br><font size="2">NATIONALLITY</font></label>
-                                    <div class="col-sm-8">
-                                      <input type="text" class="form-control">
-                                    </div>
+                        <label for="inputEmail3" class="col-sm-3 control-label" style=" margin-right: 0.5cm;">สัญชาติ<br><font size="2">NATIONALLITY</font></label>
+                            <div class="col-lg-8 col-md-8">
+                              <select class="form-control" id="sel1">
+                                <option>--เลือก--</option>
+                              </select>
+                          </div>
                     </div>
                     <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-3 control-label">เลขที่เอกสาร<br><font size="2">ID No.</font></label>
-                                    <div class="col-sm-8">
-                                      <input type="text" class="form-control">
-                                    </div>
+                        <label for="inputEmail3" class="col-sm-3 control-label" style=" margin-right: 0.5cm;">เลขที่เอกสาร<br><font size="2">ID No.</font></label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control">
+                            </div>
                     </div>
                     <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-3 control-label">ชนิดเอกสาร<br><font size="2">Type ID.</font></label>
-                                    <div class="col-sm-8">
-                                      <input type="text" class="form-control">
-                                    </div>
+                        <label for="inputEmail3" class="col-sm-3 control-label" style=" margin-right: 0.5cm;">ชนิดเอกสาร<br><font size="2">Type ID.</font></label>
+                           <div class="col-lg-8 col-md-8">
+                              <select class="form-control" id="sel1">
+                                <option>--เลือก--</option>
+                              </select>
+                          </div>
                     </div>
                     <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-3 control-label">ประเภทผู้โดยสาร<br><font size="2">Passengers Type.</font></label>
-                                    <div class="col-sm-8">
-                                      <input type="text" class="form-control">
-                                    </div>
+                        <label for="inputEmail3" class="col-sm-3 control-label" style=" margin-right: 0.5cm;">ประเภทผู้โดยสาร<br><font size="2">Passengers Type.</font></label>
+                            <div class="col-lg-8 col-md-8">
+                              <select class="form-control" id="sel1">
+                                <option>--เลือก--</option>
+                              </select>
+                            </div>
                     </div>
                 </form>		
             </div>	
