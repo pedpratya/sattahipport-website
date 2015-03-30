@@ -85,7 +85,14 @@
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label  class="col-lg-12">สัญชาติ </label><label>NATIONALITY</label></div>
-                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+                    <div class="col-lg-8 col-md-8">
+                        <select class="form-control">
+                            <option>---Select---</option>
+                            <option>ไทย</option>
+                            <option>ไทย2</option>
+                            <option>ไทย3</option>
+                        </select>
+                    </div>
                 </div> 
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
