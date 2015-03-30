@@ -19,6 +19,13 @@ class Application extends SymfonyApplication implements ApplicationContract {
 	protected $laravel;
 
 	/**
+	 * The event dispatcher implementation.
+	 *
+	 * @var \Illuminate\Contracts\Events\Dispatcher
+	 */
+	protected $events;
+
+	/**
 	 * The output from the previous command.
 	 *
 	 * @var \Symfony\Component\Console\Output\OutputInterface
@@ -36,6 +43,7 @@ class Application extends SymfonyApplication implements ApplicationContract {
 	{
 		parent::__construct('Laravel Framework', $laravel->version());
 
+		$this->event = $events;
 		$this->laravel = $laravel;
 		$this->setAutoExit(false);
 		$this->setCatchExceptions(false);

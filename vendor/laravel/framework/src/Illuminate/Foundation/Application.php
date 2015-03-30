@@ -20,7 +20,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
 	 *
 	 * @var string
 	 */
-	const VERSION = '5.0.23';
+	const VERSION = '5.0.17';
 
 	/**
 	 * The base path for the Laravel installation.
@@ -91,13 +91,6 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
 	 * @var string
 	 */
 	protected $storagePath;
-
-	/**
-	 * Indicates if the storage directory should be used for optimizations.
-	 *
-	 * @var bool
-	 */
-	protected $useStoragePathForOptimizations = false;
 
 	/**
 	 * The environment file to load during bootstrapping.
@@ -440,7 +433,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
 	 */
 	public function registerConfiguredProviders()
 	{
-		$manifestPath = $this->getCachedServicesPath();
+		$manifestPath = $this->basePath().'/vendor/services.json';
 
 		(new ProviderRepository($this, new Filesystem, $manifestPath))
 		            ->load($this->config['app.providers']);
@@ -729,14 +722,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
 	 */
 	public function getCachedConfigPath()
 	{
-		if ($this->vendorIsWritableForOptimizations())
-		{
-			return $this->basePath().'/vendor/config.php';
-		}
-		else
-		{
-			return $this['path.storage'].'/framework/config.php';
-		}
+		return $this['path.storage'].DIRECTORY_SEPARATOR.'framework'.DIRECTORY_SEPARATOR.'config.php';
 	}
 
 	/**
@@ -756,73 +742,7 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
 	 */
 	public function getCachedRoutesPath()
 	{
-		if ($this->vendorIsWritableForOptimizations())
-		{
-			return $this->basePath().'/vendor/routes.php';
-		}
-		else
-		{
-			return $this['path.storage'].'/framework/routes.php';
-		}
-	}
-
-	/**
-	 * Get the path to the cached "compiled.php" file.
-	 *
-	 * @return string
-	 */
-	public function getCachedCompilePath()
-	{
-		if ($this->vendorIsWritableForOptimizations())
-		{
-			return $this->basePath().'/vendor/compiled.php';
-		}
-		else
-		{
-			return $this->storagePath().'/framework/compiled.php';
-		}
-	}
-
-	/**
-	 * Get the path to the cached services.json file.
-	 *
-	 * @return string
-	 */
-	public function getCachedServicesPath()
-	{
-		if ($this->vendorIsWritableForOptimizations())
-		{
-			return $this->basePath().'/vendor/services.json';
-		}
-		else
-		{
-			return $this->storagePath().'/framework/services.json';
-		}
-	}
-
-	/**
-	 * Determine if vendor path is writable.
-	 *
-	 * @return bool
-	 */
-	public function vendorIsWritableForOptimizations()
-	{
-		if ($this->useStoragePathForOptimizations) return false;
-
-		return is_writable($this->basePath().'/vendor');
-	}
-
-	/**
-	 * Determines if storage directory should be used for optimizations.
-	 *
-	 * @param  bool  $value
-	 * @return $this
-	 */
-	public function useStoragePathForOptimizations($value = true)
-	{
-		$this->useStoragePathForOptimizations = $value;
-
-		return $this;
+		return $this->basePath().'/vendor/routes.php';
 	}
 
 	/**

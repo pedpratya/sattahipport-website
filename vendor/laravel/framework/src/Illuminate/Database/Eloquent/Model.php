@@ -147,7 +147,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
 	protected $touches = array();
 
 	/**
-	 * User exposed observable events.
+	 * User exposed observable events
 	 *
 	 * @var array
 	 */
@@ -287,6 +287,23 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
 	 */
 	protected static function boot()
 	{
+		$class = get_called_class();
+
+		static::$mutatorCache[$class] = array();
+
+		// Here we will extract all of the mutated attributes so that we can quickly
+		// spin through them after we export models to their array form, which we
+		// need to be fast. This will let us always know the attributes mutate.
+		foreach (get_class_methods($class) as $method)
+		{
+			if (preg_match('/^get(.+)Attribute$/', $method, $matches))
+			{
+				if (static::$snakeAttributes) $matches[1] = snake_case($matches[1]);
+
+				static::$mutatorCache[$class][] = lcfirst($matches[1]);
+			}
+		}
+
 		static::bootTraits();
 	}
 
@@ -537,11 +554,6 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
 	 */
 	public static function forceCreate(array $attributes)
 	{
-		if (static::$unguarded)
-		{
-			return static::create($attributes);
-		}
-
 		static::unguard();
 
 		$model = static::create($attributes);
@@ -1159,7 +1171,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
 	 */
 	protected function performDeleteOnModel()
 	{
-		$this->setKeysForSaveQuery($this->newQuery())->delete();
+		$this->newQuery()->where($this->getKeyName(), $this->getKey())->delete();
 	}
 
 	/**
@@ -3191,39 +3203,12 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
 	{
 		$class = get_class($this);
 
-		if ( ! isset(static::$mutatorCache[$class]))
+		if (isset(static::$mutatorCache[$class]))
 		{
-			static::cacheMutatedAttributes($class);
+			return static::$mutatorCache[$class];
 		}
 
-		return static::$mutatorCache[$class];
-	}
-
-	/**
-	 * Extract and cache all the mutated attributes of a class.
-	 *
-	 * @param string $class
-	 * @return void
-	 */
-	public static function cacheMutatedAttributes($class)
-	{
-		$mutatedAttributes = array();
-
-		// Here we will extract all of the mutated attributes so that we can quickly
-		// spin through them after we export models to their array form, which we
-		// need to be fast. This'll let us know the attributes that can mutate.
-		foreach (get_class_methods($class) as $method)
-		{
-			if (strpos($method, 'Attribute') !== false &&
-						preg_match('/^get(.+)Attribute$/', $method, $matches))
-			{
-				if (static::$snakeAttributes) $matches[1] = snake_case($matches[1]);
-
-				$mutatedAttributes[] = lcfirst($matches[1]);
-			}
-		}
-
-		static::$mutatorCache[$class] = $mutatedAttributes;
+		return array();
 	}
 
 	/**
@@ -3318,7 +3303,7 @@ abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializab
 	}
 
 	/**
-	 * Handle dynamic method calls into the model.
+	 * Handle dynamic method calls into the method.
 	 *
 	 * @param  string  $method
 	 * @param  array   $parameters
