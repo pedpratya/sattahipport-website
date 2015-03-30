@@ -11,7 +11,6 @@
     </div><!-- End header -->
     <form class="form-horizontal">
     <div class="col-lg-12 col-md-12 hr-topic"></div>
-    <div class="container">
         <div class="col-lg-12 col-md-12">
             <div class="form-group">
                 <p>ข้าพเจ้าขอยื่นคำร้องขอนำเรือดังต่อไปนี้ &nbsp;&nbsp;
@@ -211,6 +210,5 @@
                 </div> 
             </div>
         </div>
-    </div>
     </form> 
 @stop
