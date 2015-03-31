@@ -32,4 +32,15 @@ Route::group(array('prefix' => 'service'), function() {
             return View::make('service.service-request-money');
     }));
     
+    Route::get('no_unit/no5_1', array(
+        'as' => 'no_unit/no5_1',
+        function() {
+            return View::make('service.no5_1');
+    }));
+    
+    Route::get('no_unit/no5_2', array(
+        'as' => 'no_unit/no5_2',
+        function() {
+            return View::make('service.no5_2');
+    }));
 });
