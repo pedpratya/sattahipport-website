@@ -5,7 +5,7 @@
         <div class="col-lg-9 col-md-9">
                 <label>คำร้องขอนำเรือเข้า/ออก จากท่า [Berth/Sailing Application]</label>
         </div>
-        <div class="col-lg-3 col-md-3">
+        <div class="col-lg-3 col-md-3 text-right">
             <label>Temperary Code : xxx xxx xxx</label>
         </div>
     </div><!-- End header -->
