@@ -9,14 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sattahipport</title>
+    <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{!! asset('css/bootstrap.min.css') !!}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{!! asset('css/sb-admin.css') !!}" rel="stylesheet">
-    <!-- <link href="{!! asset('css/style.css') !!}" rel="stylesheet"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,31 +28,52 @@
 
 <body>
 
-    <div id="no-wrapper">
+    <div id="wrapper">
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top navbar-inverse-blue" role="navigation">
             <!-- Top Menu Items -->
             @include('inc.topbar')
+            
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            @include('inc.left_menu')
+            <!-- /.navbar-collapse -->
+            <div class="container-breadcrumb">
+                @yield('breadcrumbs') 
+            </div> 
         </nav>
 
         <div id="page-wrapper">
+
             <div class="container-fluid">
-                <div style="margin-top:50px;"></div>
+                <div style="margin-top:10px;">
+ 
+                </div>
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li class="active">
+    
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
 
                 <div class="row">
-                    <div class="col-lg-2">
-                        @yield('inc.left_menu')
-                    </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-12" id="content">
                         @yield('content')
                     </div>
                 </div>
                 <!-- /.row -->
+
             </div>
             <!-- /.container-fluid -->
+
         </div>
         <!-- /#page-wrapper -->
+
     </div>
     <!-- /#wrapper -->
 

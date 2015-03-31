@@ -27,12 +27,6 @@ body {
     background-color: #fff;
 }
 
-#no-page-wrapper {
-    width: 100%;
-    padding: 0;
-    background-color: #fff;
-}
-
 .huge {
     font-size: 50px;
     line-height: normal;
@@ -386,10 +380,6 @@ legend.scheduler-border {
     padding:0 10px; /* To give a bit of padding on the left and right */
     border-bottom:none;
 }
-.menu-active {
-    background-color: #5673B3;
-}
-
 .container-center{
     padding: 0px 100px 0px 100px;
 }
@@ -397,53 +387,9 @@ legend.scheduler-border {
     background-color: #ddd;   
 }
 .container-inner{
-   padding: 10px 25px 0px 25px;
+   padding: 0px 50px 0px 50px;
    background-color:#ffffff;     
 }
-.container-content{
-   top: 10px;   
+.menu-active {
+    background-color: #5673B3;
 }
-
-.content-center{
-    padding-top:60px;
-    /*top: 50px;*/
-}
-
-.hr-topic {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 0;
-  border-top: 1px solid #eee;
-}
-
-/*--Start input inner-addon--*/ 
-.left-inner-addon {
-    position: relative;
-}
-.left-inner-addon input {
-    padding-left: 30px;    
-}
-.left-inner-addon span {
-    position: absolute;
-    padding: 10px 12px;
-    pointer-events: none;
-}
-
-.right-inner-addon {
-    position: relative;
-}
-.right-inner-addon input {
-    padding-right: 30px;    
-}
-.right-inner-addon span {
-    position: absolute;
-    right: 0px;
-    padding: 10px 12px;
-    pointer-events: none;
-}
-/*--End input inner-addon--*/
-
-.a-tab{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
