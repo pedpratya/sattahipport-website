@@ -393,3 +393,6 @@ legend.scheduler-border {
 .menu-active {
     background-color: #5673B3;
 }
+.content-center {
+    margin: 100px 0 0 0;
+}

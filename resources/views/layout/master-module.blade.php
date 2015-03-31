@@ -63,7 +63,7 @@
                 height_content  = $('#content').height();
             
             if (height_document > height_content) {
-                $('#content').height(height_document - 140);
+                $('#page-wrapper').height(height_document);
             }
         });
     </script>
