@@ -31,6 +31,18 @@ Route::group(array('prefix' => 'service'), function() {
         function() {
             return View::make('service.service-request-money');
     }));
+
+    Route::get('service-request-product', array(
+        'as' => 'service-requst-product',
+        function() {
+            return View::make('service.service-request-product');
+    }));
+
+    Route::get('service-request-document', array(
+        'as' => 'service-request-document',
+        function() {
+            return View::make('service.service-request-document');
+    }));
     
     Route::get('no_unit/no5_1', array(
         'as' => 'no_unit/no5_1',
