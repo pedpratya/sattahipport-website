@@ -56,3 +56,4 @@ Route::group(array('prefix' => 'service'), function() {
             return View::make('service.no5_2');
     }));
 });
+
