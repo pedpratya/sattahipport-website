@@ -1,0 +1,6 @@
+[2015-03-30 03:17:53] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Foundation\Application::getCachedCompilePath()' in /Applications/XAMPP/xamppfiles/htdocs/sattahipport-website/vendor/laravel/framework/src/Illuminate/Foundation/Console/ClearCompiledCommand.php:28
+Stack trace:
+#0 {main}  
+[2015-03-30 07:51:00] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Foundation\Application::getCachedCompilePath()' in /Applications/XAMPP/xamppfiles/htdocs/sattahipport-website/vendor/laravel/framework/src/Illuminate/Foundation/Console/ClearCompiledCommand.php:28
+Stack trace:
+#0 {main}  
