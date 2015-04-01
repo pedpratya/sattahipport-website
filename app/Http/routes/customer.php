@@ -14,10 +14,10 @@ Route::group(array('prefix' => 'customer'), function() {
         return View::make('customer.index');
     }));
 
-    Route::get('customer-information', array(
-        'as' => 'customer-information',
+    Route::get('information', array(
+        'as' => 'information',
         function() {
-            return View::make('customer.customer-information');
+            return View::make('customer.information');
     }));
 
     Route::get('rental-space', array(
@@ -44,10 +44,10 @@ Route::group(array('prefix' => 'customer'), function() {
             return View::make('customer.ware-house');
     }));
     
-    Route::get('customer-port-service', array(
-        'as' => 'customer-port-service',
+    Route::get('port-service', array(
+        'as' => 'port-service',
         function() {
-            return View::make('customer.customer-port-service');
+            return View::make('customer.port-service');
     }));
 
 
