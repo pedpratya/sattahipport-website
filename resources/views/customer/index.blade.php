@@ -20,7 +20,7 @@
         <img src="{{ asset('images/icon-customermenu/services-icon.png') }}">
     </div>
     <div class="box-menu">
-        <div class="box-menu-text-m"></div>
+        <div class="box-menu-text-m">Customer Info</div>
         <img src="{{ asset('images/icon-customermenu/userInfo-icon.png') }}">
     </div>
     <div class="box-menu">
