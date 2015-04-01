@@ -38,7 +38,13 @@
         </div>   
         <div class="col-lg-12 col-md-12 hr-topic"></div>
         <div class="col-lg-12 col-md-12"> 
-            <p>VESSEL CODE : XXX XXXX XXX</p>
+            <div class="col-lg-4 col-md-4">
+                 <p>VESSEL CODE : XXX XXXX XXX</p>
+            </div>
+            <div class="col-lg-8 col-md-8 text-right">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">ลงทะเบียนเรือ</button>
+                 <button type="button" class="btn btn-default" data-dismiss="modal">ค้นหาเรือ</button>
+            </div>
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
             <div class="row form-group">
@@ -64,7 +70,7 @@
                     <div class="col-lg-4 col-md-4"><label>เจ้าของ/จัดการโดย</label><label>OWNER/OPERATED BY</label></div>
                     <div class="col-lg-8 col-md-8 right-inner-addon ">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
+                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6"> 
@@ -72,7 +78,7 @@
                     <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ที่อยู่ </label><label>ADDRESS</label></div>
                     <div class="col-lg-8 col-md-8 right-inner-addon ">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
+                        <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search">
                     </div>
                 </div> 
             </div> 
@@ -163,7 +169,7 @@
                     <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ลงนาม</label><label>SIGNATURE OF APPLICATION</label></div>
                     <div class="col-lg-8 col-md-8 right-inner-addon ">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
+                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument">
                     </div>
                 </div> 
                 <div class="form-group">                
@@ -188,14 +194,14 @@
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"></div>
-                    <div class="col-lg-8 col-md-8 text-center"><label class="col-lg-12">สัญชาติ </label><label>GRANTED</label></div>
+                    <div class="col-lg-8 col-md-8 text-center"><label class="col-lg-12">อนุมัติ</label><label>GRANTED</label></div>
                 </div> 
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">พลตรี </label><label>REAR ADMRAL</label></div>
+                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">พลเรือตรี</label><label>REAR ADMRAL</label></div>
                     <div class="col-lg-8 col-md-8 right-inner-addon ">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
+                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument">
                     </div>
                 </div> 
                 <div class="form-group"> 
@@ -220,4 +226,80 @@
         </div>
         <div class="col-lg-12 col-md-12 text-center"><button type="button" class="btn btn-primary ">Submit</button></div>
     </form> 
+    
+<!-- modal Address -->           
+<div id="mdAddress" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <!-- modal Address header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+        <h4 class="modal-title">ตำแหน่งบริหารงาน</h4>
+      </div>
+    <!-- modal Address body -->
+      <div class="modal-body">
+        <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>เลขที่ :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>อาคาร :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>หมู่/ซอย :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>ถนน :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>จังหวัด :</label></div>
+              <div class="col-md-8 col-md-8-offset-1">
+                <select class="form-control">
+                  <option value="1">กรุงเทพ</option>
+                  <option value="2">พะเยา</option>
+                  <option value="3">กรุงเทพ</option>
+                  <option value="4">เชียงราย</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>อำเภอ :</label></div>
+              <div class="col-md-8 col-md-8-offset-1">
+                <select class="form-control">
+                  <option value="1">แม่สาย</option>
+                  <option value="1">เมือง</option>
+                  <option value="1">ห้วยขว้าง</option>
+                  <option value="1">ฝาง</option>
+                </select>
+              </div>
+              </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>ตำบล :</label></div>
+              <div class="col-md-8 col-md-8-offset-1">
+                <select class="form-control">
+                  <option value="1">เวียงพางคำ</option>
+                  <option value="1">แม่ต๋ำ</option>
+                  <option value="1">ปากเกร็ด</option>
+                  <option value="1">แม่สาย</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-3-offset-1" style="text-align: right; margin-right: 0.5cm;"><label>รหัสไปรษณีย์ :</label></div>
+              <div class="col-md-8 col-md-8-offset-1"><input class="form-control" type="text" ></div>
+            </div>
+        </form>           
+      </div>
+    <!-- modal Address footer -->
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      
+    </div>
+    </div>
+  </div>
+</div><!-- End modal Address -->     
 @stop

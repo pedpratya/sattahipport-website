@@ -143,11 +143,11 @@
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"></div>
-                    <div class="col-lg-8 col-md-8 text-center"><label class="col-lg-12">สัญชาติ </label><label>GRANTED</label></div>
+                    <div class="col-lg-8 col-md-8 text-center"><label class="col-lg-12">อนุมัติ</label><label>GRANTED</label></div>
                 </div> 
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">พลตรี </label><label>REAR ADMRAL</label></div>
+                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">พลเรือตรี</label><label>REAR ADMRAL</label></div>
                     <div class="col-lg-8 col-md-8 right-inner-addon ">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                         <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
