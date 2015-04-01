@@ -42,8 +42,8 @@
                  <p>VESSEL CODE : XXX XXXX XXX</p>
             </div>
             <div class="col-lg-8 col-md-8 text-right">
-                 <button type="button" class="btn btn-default" data-dismiss="modal">ลงทะเบียนเรือ</button>
-                 <button type="button" class="btn btn-default" data-dismiss="modal">ค้นหาเรือ</button>
+                 <button type="button" class="btn btn-default" >ลงทะเบียนเรือ</button>
+                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdSearch">ค้นหาเรือ</button>
             </div>
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
@@ -302,4 +302,134 @@
     </div>
   </div>
 </div><!-- End modal Address -->     
+
+<!-- modal boat search -->           
+<div id="mdSearch" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <!-- modal boat search header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+        <h4 class="modal-title">ค้นหาเรือ</h4>
+      </div>
+    <!-- modal boat search body -->
+      <div class="modal-body">
+        <form class="form-horizontal">
+            <div class="row">
+                <label for="inputSearch1" class="col-sm-2 control-label text-center">Search : </label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="inputSearch1" placeholder="Search">
+                </div>
+                <div class="col-sm-3 col-md-offset-1">
+                        <select class="form-control" name="Name"  placeholder="Select">
+                          <option>Name</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                </div>
+                <div class="col-sm-2 text-center">
+                        <button type="button" class="btn btn-primary btn-sm btn-save" data-loading-text="Loading" data-toggle="modal" data-target="#mdConfirm" >
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+                        </button>
+                </div>
+            </div>
+            <div class="hr-topic"></div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">VESSEL CODE : </label>
+                    <div class="col-md-7 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="VESSEL CODE">
+                    </div>
+            </div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">ชื่อเรือ <br>NAME OF VESSEL : </label>
+                    <div class="col-md-7 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="NAME OF VESSEL">
+                    </div>
+            </div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">สัญชาติ <br>NATIONALTY : </label>
+                    <div class="col-md-7 col-md-offset-1">
+                            <select class="form-control" name="Name"  placeholder="Select">
+                              <option>Thai</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                    </div>
+            </div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">เจ้าของ/จัดการโดย OWNER/OPERATED : </label>
+                    <div class="col-md-7 col-md-offset-1">				
+                            <div class="right-inner-addon">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target=".modal-owner"/>
+                            </div>
+                    </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-md-4 text-right">ที่อยู่ <br> ADDRESS : </label>
+                <div class="col-md-7 col-md-offset-1">					
+                    <div class="right-inner-addon ">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <input type="text" class="form-control" id="inputForm1" placeholder="ADDRESS">
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">เนตตัน  : </label>
+                    <div class="col-md-7 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="NET TONNAGE">
+                    </div>
+            </div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">กรอสตัน : </label>
+                    <div class="col-md-7 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="GROSS TONNAGE">
+                    </div>
+            </div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">เดทเวทตัน : </label>
+                    <div class="col-md-7 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="DEADWEIGHT TONNAGE">
+                    </div>
+            </div>
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">กว้าง <br>BEAM : </label>
+                    <div class="col-md-2 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="BEAM">
+                    </div>
+                    <label class="col-md-2 text-right">ยาว<br> LEIGHT : </label>
+                    <div class="col-md-2 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="LEIGHT">
+                    </div>
+            </div>
+
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">เกินน้ำลึกเต็มที่ <br>RAFT (MAX) : </label>
+                    <div class="col-md-7 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="RAFT (MAX)">
+                    </div>
+            </div>
+
+            <div class="row form-group">
+                    <label class="col-md-4 text-right">หัว <br>BOW : </label>
+                    <div class="col-md-2 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="BOW">
+                    </div>
+                    <label class="col-md-2 text-right">ท้าย <br>ASTER : </label>
+                    <div class="col-md-2 col-md-offset-1">
+                            <input type="text" class="form-control" id="inputForm1" placeholder="ASTER">
+                    </div>
+            </div>
+        </form>           
+      </div>
+    <!-- modal boat search footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
+        <button type="button" class="btn btn-primary">Select</button>     
+    </div>
+    </div>
+  </div>
+</div><!-- End modal search -->     
 @stop
