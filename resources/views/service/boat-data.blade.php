@@ -218,5 +218,6 @@
                 </div> 
             </div>
         </div>
+        <div class="col-lg-12 col-md-12 text-center"><button type="button" class="btn btn-primary ">Submit</button></div>
     </form> 
 @stop
