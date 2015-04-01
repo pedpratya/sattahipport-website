@@ -32,3 +32,4 @@ post('sign-in',array(
 
 require __DIR__.'/routes/customer.php';
 require __DIR__.'/routes/service.php';
+require __DIR__.'/routes/regis.php';
