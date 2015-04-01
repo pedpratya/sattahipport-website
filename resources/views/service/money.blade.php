@@ -38,21 +38,22 @@
             </ul>
         </div>   
         <div class="col-lg-12 col-md-12 hr-topic"></div>
-        <div class="col-lg-12 col-md-12">
+        <div class="col-lg-11 col-md-11">
             <div class="form-group">
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-2 col-md-2" style="text-align: right; margin-right: 0.5cm;"><label>ผู้รับเงิน</label></div>
+                    <div class="col-lg-2 col-md-2"><label>ผู้รับเงิน</label></div>
                     <div class="col-lg-9 col-md-9 right-inner-addon ">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                         <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument"/>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-2 col-md-2" ><label>จำนวนเงิน</label></div>
+                    <div class="col-lg-3 col-md-3" ><label>จำนวนเงิน</label></div>
                     <div class="col-lg-9 col-md-9"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="col-lg-2 col-md-2" style="text-align: right; margin-right: 0.5cm;"><label>วันที่</label></div>
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-2 col-md-2"><label>วันที่</label></div>
                     <div class="col-lg-9 col-md-9 input-group">
                         <input type="text" class="form-control">
                         <div class="input-group-btn">
@@ -62,15 +63,15 @@
                 </div>
             </div>    
             <div class="form-group">
-                <div class="col-lg-2 col-md-2" style="text-align: right; margin-right: 0.5cm;"><label>จำนวนเงินวางมัดจำ</label></div>
-                <div class="col-lg-9 col-md-9"><input class="form-control" type="text" ></div>
+                <div class="col-lg-2 col-md-2"><label>จำนวนเงินวางมัดจำ</label></div>
+                <div class="col-lg-10 col-md-10"><input class="form-control" type="text" ></div>
             </div>
-            <div class="form-group text-right">
+            <div class="col-lg-12 col-md-12 text-right">
                 <button type="button" class="btn btn-primary">Submit</button>
             </div> 
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
-        <div class="container-fluid">
+        <div class="col-lg-12 col-md-12">
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้ารับจะปฎิบัติตาม ประกาศระเบียบ และ ข้อบังคับ ว่าด้วยการใช้ท่าเรือ การบริการ และสิ่งอำนวยความสะดวกของกิจการ
                 ท่าเรือ ซึ่งออกโดยการท่าเรือสัตหีบ และจะชำระค่าทำเนียมตามอัตราค่าภาระ การใช้ท่าเรือ ค่าบริการตามที่ การท่าเรือสัตหีบ จะเรียกเก็บ
                 และข้าพเจ้ายอมรับผลผิดในผลแห่งการละเมิด ซึ่งเรือที่นำเข้าได้เกิดความเสียหายแก่การท่าเรือสัตหีบ

@@ -38,7 +38,7 @@
             </ul>
         </div>   
         <div class="col-lg-12 col-md-12 hr-topic"></div>
-        <div class="col-lg-12 col-md-12">     
+        <div class="col-lg-11 col-md-11">     
             <div class="form-group">
                 <div class="col-lg-1 col-md-">
                     <label>หมายเหตุ</label>
@@ -47,12 +47,12 @@
                     <textarea class="form-control" rows="3"></textarea>
                 </div>                    
             </div> 
-            <div class="form-group text-right">
+            <div class="col-lg-12 col-md-12 text-right">
                 <button type="button" class="btn btn-primary">Submit</button>
             </div>   
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
-        <div class="container-fluid">
+        <div class="col-lg-12 col-md-12">
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้ารับจะปฎิบัติตาม ประกาศระเบียบ และ ข้อบังคับ ว่าด้วยการใช้ท่าเรือ การบริการ และสิ่งอำนวยความสะดวกของกิจการ
                 ท่าเรือ ซึ่งออกโดยการท่าเรือสัตหีบ และจะชำระค่าทำเนียมตามอัตราค่าภาระ การใช้ท่าเรือ ค่าบริการตามที่ การท่าเรือสัตหีบ จะเรียกเก็บ
                 และข้าพเจ้ายอมรับผลผิดในผลแห่งการละเมิด ซึ่งเรือที่นำเข้าได้เกิดความเสียหายแก่การท่าเรือสัตหีบ
