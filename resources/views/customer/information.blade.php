@@ -155,7 +155,11 @@
       <div class="col-lg-4 col-md-4"></div>
       <div class="col-lg-4 col-md-4">
         <div class="col-lg-1 col-md-1"></div>
-        <div class="col-lg-11 col-md-11"><button class="btn btn-primary btn-lg col-lg-12 col-md-12" type="button">Service Log</button></div>
+        <div class="col-lg-11 col-md-11">
+        <a href="service-log">
+          <button class="btn btn-primary btn-lg col-lg-12 col-md-12" type="button">Service Log</button>
+        </a>
+        </div>
       </div>
     </div>
     </div>
@@ -446,7 +450,7 @@
 
 <!-- mdAddress -->
 <div class="modal fade" id="mdAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
     <!-- heder -->
       <div class="modal-header">
@@ -454,7 +458,7 @@
         <h3 class="modal-title">เอกสารสำคัญ</h3>
       </div>
       <div class="col-lg-12 col-md-12 modal-header"> 
-        <div class="col-lg-9 col-md-9">
+        <div class="col-lg-11 col-md-11">
           <h3>รายการเอกสาร</h3>
         </div>
         <div class="col-lg-1 col-md-1">
@@ -467,13 +471,13 @@
         <form class="form-horizontal">
           <div class="form-group">
             <div class="col-lg-12 col-md-12">
-              <div class="col-lg-2 col-md-2"><label>ชื่อและเอกสาร :</label></div>
-              <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+              <div class="col-lg-3 col-md-3"><label>ชื่อและเอกสาร :</label></div>
+              <div class="col-lg-9 col-md-9"><input class="form-control" type="text" ></div>
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-12 col-md-12"> 
-              <div class="col-lg-2 col-md-2"><label>ไฟล์ :</label></div>
+              <div class="col-lg-3 col-md-3"><label>ไฟล์ :</label></div>
               <div class="chosefile">
                 <input type="file" name="file" class="filestyle"  required/>
               </div>
@@ -481,9 +485,9 @@
           </div>
           <table class="table">
             <tr class="active">
-              <th>No</th>
-              <th>ชื่อเอกสาร</th>
-              <th>ลบ</th>
+              <th class="text-center">No</th>
+              <th class="text-center" style="width:70%;">ชื่อเอกสาร</th>
+              <th class="text-center">ลบ</th>
             </tr>
             <tr>
               <td>1</td>

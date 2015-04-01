@@ -35,7 +35,7 @@
 
 
 <!-- body -->
-<div class="container">
+<div class="pnael-body">
 <div class="hr-topic"></div>
   <table class="table">
     <tr class="active">

@@ -350,6 +350,7 @@ ol {
     height:48px;
     word-wrap: break-word;
     white-space: pre;
+    margin-top: 10px;
 }
 
 .box-menu img{
@@ -409,9 +410,16 @@ legend.scheduler-border {
     padding-left:20px; 
     padding-right:20px;
 }
-
+/*ใช้กับ header*/
 .hr-topic {
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.hr-underlined {
+  margin-top: 20px;
   margin-bottom: 15px;
   border: 0;
   border-top: 1px solid #eee;

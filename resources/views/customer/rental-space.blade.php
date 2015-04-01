@@ -3,21 +3,22 @@
 @section('content')
 
 <!-- header -->
-<div class="col-lg-12 col-md-12">
-  <div class="col-lg-10 col-md-10">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd"> 1</button>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd"> 2</button>
-  </div>
-  <div class="col-lg-2 col-md-2">
-    <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
-  </div>
-</div><!-- End header -->
+<div class="panel-header">
+  <div class="col-lg-12 col-md-12">
+    <div class="col-lg-10 col-md-10">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd"> 1</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd"> 2</button>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <label>พิมพ์ข้อมูลทั้งหมด <button type="button" class="btn btn-default glyphicon glyphicon-print"></button></label>
+    </div>
+  </div><!-- End header -->
+</div>
 
 <!-- body -->
-<div class="panel-body">
+<div class="pnael-body">
 <div class="hr-topic"></div>
-  <form class="form-horizontal">
-    <div class="col-lg-12 col-md-12">                
+  <form class="form-horizontal">               
       <div class="form-group">  
         <div class="col-lg-2 col-md-2"><label>Code</label></div>
         <div class="col-lg-10 col-md-10"> <p class="form-control-static">-- -- --</p></div>
@@ -85,8 +86,7 @@
               <img src="{{ asset('images/map.png') }}" alt="..." class="img-rounded" width="auto">      
             </div>
           </fieldset>
-        </div>
-    </div>       
+        </div>     
   </form>
 </div><!-- End body -->
 

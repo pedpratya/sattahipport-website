@@ -1,5 +1,4 @@
 @extends('layout.master')
-
 @section('content')
 
 <!-- header -->
@@ -33,41 +32,6 @@
     </div>
   </div>
 </div><!-- End header -->
-
-<!-- header -->
-<!-- <div class="col-lg-12 col-md-12">
-  <div class="col-lg-3 col-md-3">
-    <button type="button" class="btn btn-primary">ขอใช้บริการ</button>
-  </div>
-  <div class="col-lg-3 col-md-3">
-    <div class="form-group"> 
-      <div class="col-lg-3 col-md-3"><label>ค้นหา</label></div>
-      <div class="col-lg-8 col-md-8" ><input type="text" class="form-control"   style="margin-left: 5px"></div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-3">
-    <div class="form-group"> 
-      <div class="col-lg-3 col-md-3"><label>ว-ด-ป</label></div>
-      <div class="input-group col-lg-8 col-md-8">
-        <input type="text" class="form-control" aria-label="...">
-        <div class="input-group-btn">
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-3">
-    <div class="form-group"> 
-      <div class="col-lg-3 col-md-3"><label>ว-ด-ป</label></div>
-      <div class="input-group col-lg-8 col-md-8">
-        <input type="text" class="form-control" aria-label="...">
-        <div class="input-group-btn">
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-        </div>
-      </div>
-    </div>
-  </div> -->
-<!-- </div> --><!-- End header -->
 
 <!-- body -->
 <div class="container">

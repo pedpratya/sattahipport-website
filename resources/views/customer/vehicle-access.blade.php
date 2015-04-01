@@ -13,8 +13,8 @@
 </div><!-- End header -->
 
 <!-- body -->
-<div class="panel-body">
 <div class="hr-topic"></div>
+<div class="panel-body">
   <form class="form-horizontal">
     <div class="col-lg-12 col-md-12">                
       <div class="form-group">
@@ -67,7 +67,7 @@
       </div>
     <!-- table -->
       <label>ตารางรถที่ลงทะเบียน</label>
-      <div class="hr-topic"></div>
+      <div class="hr-underlined"></div>
       <table class="table">
         <tr  class="active">
           <th >No</th>

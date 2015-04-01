@@ -3,19 +3,19 @@
 @section('content')
 <!-- header -->
 <div class="col-lg-12 col-md-12">
-  <div class="col-lg-3 col-md-3">
+  <div class="col-lg-4 col-md-4">
     <h4><b>Service Log</b></h4>
   </div>
   <div class="col-lg-4 col-md-4 bfh-datepicker pull-right">
-    <label class="col-lg-3 col-md-3" style="text-align: right; margin-right: 0.5cm;">Start Date :</label>
-    <div class="col-lg-8 col-md-8 input-group date">          
+    <label class="col-lg-5 col-md-5" style="text-align: right; margin-right: 0.5cm;">Start Date :</label>
+    <div class="col-lg-6 col-md-6 input-group date">          
       <input type="text" class="form-control" placeholder="">
       <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
     </div>
   </div>
   <div class="col-lg-4 col-md-4 bfh-datepicker pull-right" >
-    <label class="col-lg-3 col-md-3" style="text-align: right; margin-right: 0.5cm;">End Date :</label>
-    <div class="col-lg-8 col-md-8 input-group date">          
+    <label class="col-lg-5 col-md-5" style="text-align: right; margin-right: 0.5cm;">End Date :</label>
+    <div class="col-lg-6 col-md-6 input-group date">          
       <input type="text" class="form-control" placeholder="">
       <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
     </div>
@@ -23,8 +23,9 @@
 </div><!-- End header -->
 
 <!-- table -->
-<div class="container">
+<!-- body -->
 <div class="hr-topic"></div>
+<div class="panel-body">
   <table class="table">
     <tr class="active">
         <th>Wait</th>
