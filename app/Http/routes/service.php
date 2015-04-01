@@ -8,40 +8,40 @@
 
 Route::group(array('prefix' => 'service'), function() {
 
-    Route::get('service-request-note', array(
-        'as' => 'service-request-note',
+    Route::get('note', array(
+        'as' => 'note',
         function() {
-            return View::make('service.service-request-note');
+            return View::make('service.note');
     }));
  
-    Route::get('service-request-data', array(
-        'as' => 'service-request-data',
+    Route::get('boat-data', array(
+        'as' => 'boat-data',
         function() {
-            return View::make('service.service-request-data');
+            return View::make('service.boat-data');
     }));
     
-    Route::get('service-request-passenger', array(
-        'as' => 'service-request-passenger',
+    Route::get('passenger', array(
+        'as' => 'passenger',
         function() {
-            return View::make('service.service-request-passenger');
+            return View::make('service.passenger');
     }));
     
-    Route::get('service-request-money', array(
-        'as' => 'service-request-money',
+    Route::get('money', array(
+        'as' => 'money',
         function() {
-            return View::make('service.service-request-money');
+            return View::make('service.money');
     }));
 
-    Route::get('service-request-product', array(
-        'as' => 'service-requst-product',
+    Route::get('product-detail', array(
+        'as' => 'product-detail',
         function() {
-            return View::make('service.service-request-product');
+            return View::make('service.product-detail');
     }));
 
-    Route::get('service-request-document', array(
-        'as' => 'service-request-document',
+    Route::get('document', array(
+        'as' => 'document',
         function() {
-            return View::make('service.service-request-document');
+            return View::make('service.document');
     }));
     
     Route::get('no_unit/no5_1', array(
