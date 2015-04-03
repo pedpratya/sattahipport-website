@@ -741,13 +741,14 @@
                 </div>
                 <div class="col-lg-5 col-md-5">
                   <div class="form-group">
-                      <div style="text-align: right; margin-right: 0.5cm;"></div>
+                      <div class="col-xs-2 col-sm-2"></div>
                       <div class="col-xs-7 col-sm-7">
                         <select class="form-control" id="sel1">
                           <option>Doc Type</option>
                         </select>
                       </div>
-                      <div class="col-lg-5 col-md-5"> 
+                      <div class="col-xs-1 col-sm-1"></div>
+                      <div class="col-lg-2 col-md-2"> 
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mdAdd">Add</button>
                       </div>
                   </div>
