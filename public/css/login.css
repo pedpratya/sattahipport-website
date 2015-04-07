@@ -1,0 +1,9 @@
+.panel-login {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #ffffff;
+  background-color: #e5412d;
+  border-color: #dd301b;
+}

@@ -1,72 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <title>SATTAHIP E-PORT</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="">
-    <meta name="author" content="">
+	<meta name="author" content="" />
 
-    <title>Sattahipport</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,800italic,400,600,800" type="text/css">
+	<link rel="stylesheet" href="{!! asset('css/font-awesome.min.css') !!}" type="text/css" />		
+	<link rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}" type="text/css" />	
+	<link rel="stylesheet" href="{!! asset('js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.css') !!}" type="text/css" />		
+	<link rel="stylesheet" href="{!! asset('js/plugins/magnific/magnific-popup.css') !!}" type="text/css" />
+        
+	<link rel="stylesheet" href="{!! asset('js/plugins/icheck/skins/minimal/blue.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/datepicker/datepicker.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/select2/select2.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/timepicker/bootstrap-timepicker.css') !!}" type="text/css" />
+	<link rel="stylesheet" href="{!! asset('js/plugins/fileupload/bootstrap-fileupload.css') !!}" type="text/css" />        
+        
+	<link rel="stylesheet" href="{!! asset('css/App.css') !!}" type="text/css" />
 
-    <!-- Bootstrap Core CSS -->
-    <link href="{!! asset('css/bootstrap.min.css') !!}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{!! asset('css/sb-admin.css') !!}" rel="stylesheet">
-    <!-- <link href="{!! asset('css/style.css') !!}" rel="stylesheet"> -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<link rel="stylesheet" href="{!! asset('css/custom.css') !!}" type="text/css" />
 </head>
-
 <body>
+<div id="wrapper">
+	
+	<header id="header">
+		 @include('inc.header')
+	</header> <!-- header -->
 
-    <div id="no-wrapper">
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top navbar-inverse-blue" role="navigation">
-            <!-- Top Menu Items -->
-            @include('inc.topbar')
-        </nav>
+	<nav id="top-bar" class="collapse top-bar-collapse">
+             @include('inc.menu_header')
+	</nav> <!-- /#top-bar -->
 
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 content-center">
-                        @yield('content')
-                    </div>
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container-fluid -->
-        </div>
-        <!-- /#page-wrapper -->
-    </div>
-    <!-- /#wrapper -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	<div id="sidebar-wrapper" class="collapse sidebar-collapse">
+	
+		<div id="search">
+			<form>
+				<input class="form-control input-sm" type="text" name="search" placeholder="Search..." />
 
-    <script>
-        $(document).ready(function(){
-            var height_document = $( document ).height(),
-                height_content  = $('#content').height();
-            
-            if (height_document > height_content) {
-                $('#page-wrapper').height(height_document);
-            }
-        });
-    </script>
+				<button type="submit" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+			</form>		
+		</div> <!-- #search -->
+	
+		<nav id="sidebar">		
+			
+			<ul id="main-nav" class="open-active">			
+                            @include('inc.menu_left')
+			</ul>
+					
+		</nav> <!-- #sidebar -->
+
+	</div> <!-- /#sidebar-wrapper -->
+
+
+	
+	<div id="content">		
+		
+		<div id="content-header">
+			<h1>@yield('breadcrumbs')</h1>
+		</div> <!-- #content-header -->	
+
+
+		<div id="content-container">
+			@yield('content')		
+		</div> <!-- /#content-container -->			
+		
+	</div> <!-- #content -->
+	
+	
+</div> <!-- #wrapper -->
+
+<footer id="footer">
+	<ul class="nav pull-right">
+		<li>
+			Copyright &copy; 2015, Sattahip E-Port.
+		</li>
+	</ul>
+</footer>
+
+<!-- #modal html -->
+@yield('modalhtml')
+
+<script src="{{ asset('js/libs/jquery-1.9.1.min.js') }}"></script>
+<script src="{{ asset('js/libs/jquery-ui-1.9.2.custom.min.js') }}"></script>
+<script src="{{ asset('js/libs/bootstrap.min.js') }}"></script>
+
+<script src="{{ asset('js/plugins/icheck/jquery.icheck.js') }}"></script>
+<script src="{{ asset('js/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+<script src="{{ asset('js/plugins/timepicker/bootstrap-timepicker.js') }}"></script>
+<script src="{{ asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.js') }}"></script>
+<script src="{{ asset('js/plugins/select2/select2.js') }}"></script>
+<script src="{{ asset('js/plugins/autosize/jquery.autosize.min.js') }}"></script>
+<script src="{{ asset('js/plugins/textarea-counter/jquery.textarea-counter.js') }}"></script>
+<script src="{{ asset('js/plugins/fileupload/bootstrap-fileupload.js') }}"></script>
+<!--modal popup-->
+<script src="{{ asset('js/plugins/magnific/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('js/plugins/howl/howl.js') }}"></script>
+
+<script src="{{ asset('js/App-tamplate.js') }}"></script>
+
+@yield('bottomscript')
 </body>
 
 </html>

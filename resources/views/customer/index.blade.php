@@ -1,46 +1,46 @@
-@extends('layout.master-module')
+@extends('layout.master-mainmanu')
 
 
 @section('content')
 <div class="container container-center text-center">    
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/news-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/news-icon.png') }}">
         <div class="box-menu-text-m">ข่าวสาร</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/event-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/event-icon.png') }}">
         <div class="box-menu-text-m">EVENT</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/info-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/info-icon.png') }}">
         <div class="box-menu-text-m">ข้อมูลทั่วไป</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/services-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/services-icon.png') }}">
         <div class="box-menu-text-m">บริการ ทพส.ทร.</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/userInfo-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/userInfo-icon.png') }}">
         <div class="box-menu-text-m">Customer Info</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/downloadForm-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/downloadForm-icon.png') }}">
         <div class="box-menu-text-m">Download<p>แบบฟอร์ม</p></div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/serviceRate-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/serviceRate-icon.png') }}">
         <div class="box-menu-text-m">อัตราค่าบริการ</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/requestServ-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/requestServ-icon.png') }}">
         <div class="box-menu-text-m">ขอใช้บริการ</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/serviceLog-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/serviceLog-icon.png') }}">
         <div class="box-menu-text-m">ข้อมูลการใช้บริการ</div>
     </div>
     <div class="box-menu">
-        <img src="{{ asset('images/icon-customermenu/portSCH-icon.png') }}">
+        <img src="{{ asset('img/icon-mainmenu/portSCH-icon.png') }}">
         <div class="box-menu-text-m">Port Schedule</div>
     </div>
 </div>    
