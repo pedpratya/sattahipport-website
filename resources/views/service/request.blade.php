@@ -1,6 +1,7 @@
 @extends('layout.master-mainmanu')
 @section('content')
 <!-- header -->
+<div style="height:1300px;">
     <div class="col-lg-12 col-md-12">
         <div class="col-lg-9 col-md-9">
                 <label>คำร้องขอนำเรือเข้า/ออก จากท่า [Berth/Sailing Application]</label>
@@ -40,7 +41,9 @@
     <div class="col-lg-12 col-md-12 hr-topic"></div>
         <div id="myTab1Content" class="tab-content">       <!--Tab All-->   
             <!--Tab 1-->
-            <div class="tab-pane fade in active" id="boat-data">  
+            <div class="tab-pane fade in active" id="boat-data"> 
+                <form class="form-horizontal" name="form1">
+                <div class="col-lg-12 col-md-12">    
                 <div class="form-group"> 
                     <div class="col-lg-4 col-md-4">
                          <p>VESSEL CODE : XXX XXXX XXX</p>
@@ -50,6 +53,7 @@
                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mdSearch">ค้นหาเรือ</button>
                     </div>
                 </div>
+                
                 <div class="col-lg-12 col-md-12 hr-topic"></div>
                 <div class="form-group">
                     <div class="col-lg-6 col-md-6">                
@@ -154,6 +158,8 @@
                         <div class="col-lg-3 col-md-3"><input class="form-control" type="text" ></div>
                      </div>  
                 </div>
+                </div>
+                 </form>
             </div>   
             <!--END Tab 1--> 
             <!--Tab 2--> 
@@ -469,6 +475,7 @@
         </div>
         <div class="col-lg-12 col-md-12 text-center"><button type="button" class="btn btn-primary ">Submit</button></div>
         </form>
+</div>        
 @stop
 
 @section('modalhtml')
