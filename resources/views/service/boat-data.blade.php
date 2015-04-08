@@ -15,10 +15,10 @@
             <div class="form-group">
                 <p>ข้าพเจ้าขอยื่นคำร้องขอนำเรือดังต่อไปนี้ &nbsp;&nbsp;
                 <label>
-                   เข้า <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                   เข้า <input type="radio" name="inlineRadioOptions" id="1" value="option1"> 
                 </label>
                 <label>
-                   ออก <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                   ออก <input type="radio" name="inlineRadioOptions" id="2" value="option1"> 
                 </label>
                 &nbsp;&nbsp; จากท่า</p>
             </div>
@@ -37,7 +37,7 @@
             </ul>
         </div>   
         <div class="col-lg-12 col-md-12 hr-topic"></div>
-        <div class="col-lg-12 col-md-12"> 
+        <div class="form-group"> 
             <div class="col-lg-4 col-md-4">
                  <p>VESSEL CODE : XXX XXXX XXX</p>
             </div>
@@ -47,14 +47,13 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">                
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ชื่อเรือ</label><label>NAME OF VESSEL</label></div>
+                    <div class="col-lg-4 col-md-4"><label>ชื่อเรือ</label><br><label>NAME OF VESSEL</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-6 col-md-6">  
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">สัญชาติ </label><label>NATIONALITY</label></div>
+                    <div class="col-lg-4 col-md-4"><label>สัญชาติ </label><br><label>NATIONALITY</label></div>
                     <div class="col-lg-8 col-md-8">
                         <select class="form-control">
                             <option>---Select---</option>
@@ -65,88 +64,88 @@
                     </div>
                 </div>
             </div> 
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">                 
-                    <div class="col-lg-4 col-md-4"><label>เจ้าของ/จัดการโดย</label><label>OWNER/OPERATED BY</label></div>
-                    <div class="col-lg-8 col-md-8 right-inner-addon ">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument">
-                    </div>
+                    <div class="col-lg-4 col-md-4"><label>เจ้าของ/จัดการโดย</label><br><label>OWNER/OPERATED BY</label></div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="right-inner-addon">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument">
+                        </div>
+                    </div>    
                 </div>
                 <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ที่อยู่ </label><label>ADDRESS</label></div>
-                    <div class="col-lg-8 col-md-8 right-inner-addon ">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search">
-                    </div>
+                    <div class="col-lg-4 col-md-4"><label>ที่อยู่ </label><br><label>ADDRESS</label></div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="right-inner-addon">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search">
+                        </div>
+                    </div>    
                 </div> 
             </div> 
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">                 
-                    <div class="col-lg-4 col-md-4"><label class="col-lg-12">เนตตัน </label><label>NET TONNAGE</label></div>
+                    <div class="col-lg-4 col-md-4"><label>เนตตัน </label><br><label>NET TONNAGE</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                  <div class="col-lg-6 col-md-6">  
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">กรอสตัน </label><label>GROSS TONNAGE</label></div>
+                    <div class="col-lg-4 col-md-4"><label>กรอสตัน </label><br><label>GROSS TONNAGE</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">                 
-                    <div class="col-lg-4 col-md-4"><label>เดทเวทตัน</label><label>DEADWEIGHT TONNAGE</label></div>
+                    <div class="col-lg-4 col-md-4"><label>เดทเวทตัน</label><br><label>DEADWEIGHT TONNAGE</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-6 col-md-6">  
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">กินน้ำลึกเต็มที่</label><label>DRAFT (MAX)</label></div>
+                    <div class="col-lg-4 col-md-4"><label>กินน้ำลึกเต็มที่</label><br><label>DRAFT (MAX)</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div> 
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">                
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">กว้าง</label><label>BEAM</label></div>
+                    <div class="col-lg-4 col-md-4"><label>กว้าง</label><br><label>BEAM</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-6 col-md-6">  
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ยาว</label><label>LENGTH</label></div>
+                    <div class="col-lg-4 col-md-4"><label>ยาว</label><br><label>LENGTH</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">               
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">หัว</label><label>BOW</label></div>
+                    <div class="col-lg-4 col-md-4"><label>หัว</label><br><label>BOW</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">ท้าย</label><label>ASTERN</label></div>
+                    <div class="col-lg-4 col-md-4"><label>ท้าย</label><br><label>ASTERN</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <div class="col-lg-6 col-md-6">               
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ตั้งแต่วันที่</label><label>FOR THE PERIOD FROM DATE</label></div>
-                    <div class="col-lg-8 col-md-8 input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                    <div class="col-lg-4 col-md-4"><label>ตั้งแต่วันที่</label><br><label>FOR THE PERIOD FROM DATE</label></div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6"> 
-                    <div class="col-lg-1 col-md-1"></div>                    
+                <div class="col-lg-6 col-md-6">                 
                     <div class="col-lg-3 col-md-3">
-                        <label  class="col-lg-12">เวลา</label>
+                        <label>เวลา</label><br>
                         <label>TIME</label>
                     </div>                   
                     <div class="col-lg-4 col-md-4">
                         <div class="col-lg-11 col-md-11"><input class="form-control" type="text" ></div>
                     </div>
-                    <div class="col-lg-1 col-md-1">
-                            <div class="col-lg-3 col-md-3"><label>ท่า</label><label>PORT</label></div>                                
+                    <div class="col-lg-2 col-md-2">
+                            <div class="col-lg-3 col-md-3"><label>ท่า</label><br><label>PORT</label></div>                                
                     </div>
                     <div class="col-lg-3 col-md-3"><input class="form-control" type="text" ></div>
                  </div>  
@@ -167,10 +166,12 @@
             <div class="col-lg-6 col-md-6">
                 <div class="form-group">                
                     <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ลงนาม</label><label>SIGNATURE OF APPLICATION</label></div>
-                    <div class="col-lg-8 col-md-8 right-inner-addon ">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument">
-                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="right-inner-addon">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search">
+                        </div>
+                    </div> 
                 </div> 
                 <div class="form-group">                
                     <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ชื่อตัวบรรจง</label><label>PRINTED NAME</label></div>
@@ -182,10 +183,12 @@
                 </div>
                 <div class="form-group">                
                     <div class="col-lg-4 col-md-4"><label  class="col-lg-12">วันที่</label><label>DATE</label></div>
-                    <div class="col-lg-8 col-md-8 input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                    <div class="col-lg-8 col-md-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,10 +202,12 @@
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label  class="col-lg-12">พลเรือตรี</label><label>REAR ADMRAL</label></div>
-                    <div class="col-lg-8 col-md-8 right-inner-addon ">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <input type="search" class="form-control" placeholder="Search" data-toggle="modal" data-target="#mdDocument">
-                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="right-inner-addon">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search">
+                        </div>
+                    </div> 
                 </div> 
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
@@ -215,18 +220,22 @@
                 <div class="form-group"> 
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label  class="col-lg-12">วันที่</label><label>DATE</label></div>
-                    <div class="col-lg-8 col-md-8 input-group">
-                        <input type="text" class="form-control">
-                        <div class="input-group-btn">
-                          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                    <div class="col-lg-8 col-md-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
+                            </div>
                         </div>
                     </div>
                 </div> 
             </div>
         </div>
-        <div class="col-lg-12 col-md-12 text-center"><button type="button" class="btn btn-primary ">Submit</button></div>
+        <div class="col-lg-12 col-md-12 text-center"><button type="button" class="btn btn-primary">Submit</button></div>
     </form> 
-    
+@stop
+
+@section('modalhtml')    
 <!-- modal Address -->           
 <div id="mdAddress" class="modal fade">
   <div class="modal-dialog">
@@ -335,19 +344,19 @@
                 </div>
             </div>
             <div class="hr-topic"></div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">VESSEL CODE : </label>
                     <div class="col-md-7 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="VESSEL CODE">
                     </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">ชื่อเรือ <br>NAME OF VESSEL : </label>
                     <div class="col-md-7 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="NAME OF VESSEL">
                     </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">สัญชาติ <br>NATIONALTY : </label>
                     <div class="col-md-7 col-md-offset-1">
                             <select class="form-control" name="Name"  placeholder="Select">
@@ -358,7 +367,7 @@
                             </select>
                     </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">เจ้าของ/จัดการโดย OWNER/OPERATED : </label>
                     <div class="col-md-7 col-md-offset-1">				
                             <div class="right-inner-addon">
@@ -367,7 +376,7 @@
                             </div>
                     </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                 <label class="col-md-4 text-right">ที่อยู่ <br> ADDRESS : </label>
                 <div class="col-md-7 col-md-offset-1">					
                     <div class="right-inner-addon ">
@@ -376,25 +385,25 @@
                     </div>
                 </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">เนตตัน  : </label>
                     <div class="col-md-7 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="NET TONNAGE">
                     </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">กรอสตัน : </label>
                     <div class="col-md-7 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="GROSS TONNAGE">
                     </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">เดทเวทตัน : </label>
                     <div class="col-md-7 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="DEADWEIGHT TONNAGE">
                     </div>
             </div>
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">กว้าง <br>BEAM : </label>
                     <div class="col-md-2 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="BEAM">
@@ -405,14 +414,14 @@
                     </div>
             </div>
 
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">เกินน้ำลึกเต็มที่ <br>RAFT (MAX) : </label>
                     <div class="col-md-7 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="RAFT (MAX)">
                     </div>
             </div>
 
-            <div class="row form-group">
+            <div class="form-group">
                     <label class="col-md-4 text-right">หัว <br>BOW : </label>
                     <div class="col-md-2 col-md-offset-1">
                             <input type="text" class="form-control" id="inputForm1" placeholder="BOW">
