@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.master-mainmanu')
 @section('content')
 <!-- header -->
     <div class="col-lg-12 col-md-12">
@@ -165,24 +165,25 @@
         <div class="col-lg-12 col-md-12">
             <div class="col-lg-6 col-md-6">
                 <div class="form-group">                
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ลงนาม</label><label>SIGNATURE OF APPLICATION</label></div>
+                    <div class="col-lg-4 col-md-4"><label>ลงนาม</label></div>
                     <div class="col-lg-8 col-md-8">
                         <div class="right-inner-addon">
                             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             <input type="search" class="form-control" data-toggle="modal" data-target="#mdAddress" placeholder="Search">
                         </div>
                     </div> 
+                    <div class="col-lg-12 col-md-12"><label>SIGNATURE OF APPLICATION</label></div>
                 </div> 
                 <div class="form-group">                
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ชื่อตัวบรรจง</label><label>PRINTED NAME</label></div>
+                    <div class="col-lg-4 col-md-4"><label>ชื่อตัวบรรจง</label><br><label>PRINTED NAME</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="form-group">                
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">ตำแหน่ง</label><label>TITLE</label></div>
+                    <div class="col-lg-4 col-md-4"><label>ตำแหน่ง</label><br><label>TITLE</label></div>
                     <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                 </div>
                 <div class="form-group">                
-                    <div class="col-lg-4 col-md-4"><label  class="col-lg-12">วันที่</label><label>DATE</label></div>
+                    <div class="col-lg-4 col-md-4"><label>วันที่</label><br><label>DATE</label></div>
                     <div class="col-lg-8 col-md-8">
                         <div class="input-group">
                             <input type="text" class="form-control">
@@ -195,13 +196,11 @@
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="form-group"> 
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"></div>
-                    <div class="col-lg-8 col-md-8 text-center"><label class="col-lg-12">อนุมัติ</label><label>GRANTED</label></div>
+                    <div class="col-lg-4 col-md-4"></div>
+                    <div class="col-lg-8 col-md-8 text-center"><label>อนุมัติ</label><br><label>GRANTED</label></div>
                 </div> 
                 <div class="form-group"> 
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">พลเรือตรี</label><label>REAR ADMRAL</label></div>
+                    <div class="col-lg-4 col-md-4"><label>พลเรือตรี</label><br><label>REAR ADMRAL</label></div>
                     <div class="col-lg-8 col-md-8">
                         <div class="right-inner-addon">
                             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -210,16 +209,14 @@
                     </div> 
                 </div> 
                 <div class="form-group"> 
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"></div>
+                    <div class="col-lg-4 col-md-4"></div>
                     <div class="col-lg-8 col-md-8 text-center">
-                        <label class="col-lg-12">ผู้อำนวยการ การท่าเรือสัตหีบ ฐานทับเรือสัตหีบ</label>
+                        <label>ผู้อำนวยการ การท่าเรือสัตหีบ ฐานทับเรือสัตหีบ</label><br>
                         <label>DIRECTOR PORT SATTAHIP SATTAHIP NAVAL BASE</label>
                     </div>
                 </div> 
                 <div class="form-group"> 
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-3 col-md-3"><label  class="col-lg-12">วันที่</label><label>DATE</label></div>
+                    <div class="col-lg-4 col-md-4"><label>วันที่</label><br><label>DATE</label></div>
                     <div class="col-lg-8 col-md-8">
                         <div class="input-group">
                             <input type="text" class="form-control">

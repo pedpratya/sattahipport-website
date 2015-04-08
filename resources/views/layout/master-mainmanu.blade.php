@@ -51,7 +51,11 @@
 		</li>
 	</ul>
 </footer>
-	
+
+<!-- #modal html -->
+@yield('modalhtml')
+
+
 <script src="{{ asset('js/libs/jquery-1.9.1.min.js') }}"></script>
 <script src="{{ asset('js/libs/jquery-ui-1.9.2.custom.min.js') }}"></script>
 <script src="{{ asset('js/libs/bootstrap.min.js') }}"></script>
