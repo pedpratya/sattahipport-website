@@ -22,10 +22,10 @@
 
 
 
-<!-- body -->
-<div class="pnael-body">
-<div class="hr-topic"></div>
-  <form class="form-horizontal">               
+
+<div class="portlet">
+  <div class="portlet-content">
+    <form class="form-horizontal">               
       <div class="form-group">  
         <div class="col-lg-2 col-md-2"><label>Code :</label></div>
         <div class="col-lg-10 col-md-10"> <p class="form-control-static">-- -- --</p></div>
@@ -99,7 +99,9 @@
           </div>
         </fieldset>
       </div>     
-  </form>
-</div><!-- End body -->
+    </form>
+  </div>
+</div>
+
 
 @stop

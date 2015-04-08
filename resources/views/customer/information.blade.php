@@ -2,6 +2,9 @@
 @section('content')
 
 <!-- form -->
+
+<div class="portlet">
+  <div class="portlet-content">
 <form class="form-horizontal" >
   <div class="col-lg-8 col-md-8">
       <div class="form-group">  
@@ -166,6 +169,8 @@
     </div>
   </div>
 </form><!-- End form -->
+</div>
+</div>
 @stop
 
 
