@@ -1,7 +1,8 @@
 @extends('layout.master-mainmanu')
 @section('content')
 <!-- header -->
-<div style="height:1300px;">
+<div class="container-fluid">
+<div style="height:100%;">
     <div class="col-lg-12 col-md-12">
         <div class="col-lg-9 col-md-9">
                 <label>คำร้องขอนำเรือเข้า/ออก จากท่า [Berth/Sailing Application]</label>
@@ -475,7 +476,8 @@
         </div>
         <div class="col-lg-12 col-md-12 text-center"><button type="button" class="btn btn-primary ">Submit</button></div>
         </form>
-</div>        
+</div>
+</div>    
 @stop
 
 @section('modalhtml')
