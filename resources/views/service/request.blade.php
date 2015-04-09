@@ -484,15 +484,15 @@
 @stop
 
 @section('modalhtml')
-<!-- modal Address -->           
-<div id="mdAddress" class="modal fade">
+<!-- modal Address -->
+<div id="mdAddress" class="modal modal-styled fade">
   <div class="modal-dialog">
     <div class="modal-content">
-    <!-- modal Address header -->
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
-        <h4 class="modal-title">ตำแหน่งบริหารงาน</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">ที่อยู่</h3>
       </div>
+
     <!-- modal Address body -->
       <div class="modal-body">
         <form class="form-horizontal">
@@ -553,22 +553,23 @@
       </div>
     <!-- modal Address footer -->
     <div class="modal-footer">
-        <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>      
-    </div>
-    </div>
-  </div>
-</div><!-- End modal Address -->     
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- End modal Address -->     
 
-<!-- modal boat search -->           
-<div id="mdSearch" class="modal fade">
+<!-- modal boat search --> 
+<div id="mdSearch" class="modal modal-styled fade">
   <div class="modal-dialog">
     <div class="modal-content">
-    <!-- modal boat search header -->
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
-        <h4 class="modal-title">ค้นหาเรือ</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">ค้นหาเรือ</h3>
       </div>
+
     <!-- modal boat search body -->
       <div class="modal-body">
         <form class="form-horizontal">
@@ -683,20 +684,23 @@
       </div>
     <!-- modal boat search footer -->
     <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">ADD</button>
-        <button type="button" class="btn btn-primary">Select</button>     
-    </div>
-    </div>
-  </div>
-</div><!-- End modal search -->    
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- End modal search -->   
+
 <!-- popup Add -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Add Passengers</h4>
-            </div>
+<div id="myModal" class="modal modal-styled fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">Add Passengers</h3>
+      </div>
+
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
@@ -738,19 +742,22 @@
                 </form>		
             </div>	
             <div class="modal-footer">
-                    <button type="Submit" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
-    </div>	
-</div>
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <!-- popup รายการเอกสารที่แนบ -->
-<div class="modal fade" id="mddocument" tabindex="-1" role="dialog" aria-labelledby="mddocument" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true" >&times;</button>
-              <h3 class="modal-title">รายการเอกสารที่แนบ</h3>
-            </div>
+<div id="mddocument" class="modal modal-styled fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">รายการเอกสารที่แนบ</h3>
+      </div>
+        
             <div class="modal-body">
               <form class="form-horizontal">
                 <div class="col-lg-7 col-md-7">
@@ -804,7 +811,11 @@
              
               </form>
             </div>
-        </div>
-    </div>
-</div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-tertiary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 @stop
