@@ -47,8 +47,10 @@
                     <textarea class="form-control" rows="3"></textarea>
                 </div>                    
             </div> 
-            <div class="col-lg-12 col-md-12 text-right">
+            <div class="form-group">
+                <div class="col-lg-12 col-md-12 text-right"> 
                 <button type="button" class="btn btn-primary">Submit</button>
+                </div>
             </div>   
         </div>
         <div class="col-lg-12 col-md-12 hr-topic"></div>

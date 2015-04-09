@@ -145,11 +145,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">                 
+                    <div class="col-lg-6 col-md-6">  
                         <div class="col-lg-3 col-md-3">
                             <label>เวลา</label><br>
                             <label>TIME</label>
-                        </div>                   
+                        </div>  
                         <div class="col-lg-4 col-md-4">
                             <div class="col-lg-11 col-md-11"><input class="form-control" type="text" ></div>
                         </div>
@@ -167,18 +167,12 @@
             <div class="tab-pane fade" id="product-detail">
                 <form class="form-horizontal">
                 <div class="col-lg-12 col-md-12">     
-                    <div class="col-lg-6 col-md-6">
-                        <div class="form-group">                
+                    <div class="form-group">
+                        <div class="col-lg-6 col-md-6">                
                             <div class="col-lg-4 col-md-4"><label>จำนวนสินค้าเข้า</label><label>AMOUNT OF CARGO TO BE DISCHARGED</label></div>
                             <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-                        </div>                
-                        <div class="form-group">                
-                            <div class="col-lg-4 col-md-4"><label>จำนวนสินค้าออก</label><label>AMOUNT OF CARGO TO BE LOADED</label></div>
-                            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="form-group"> 
+                        </div>  
+                        <div class="col-lg-6 col-md-6"> 
                             <div class="col-lg-1 col-md-1"></div>
                             <div class="col-lg-3 col-md-3"><label>รายการสินค้า </label><label>DISCRIPTION OF CARGO</label></div>
                             <div class="col-lg-8 col-md-8">
@@ -187,8 +181,15 @@
                                     <input type="search" class="form-control" data-toggle="modal" data-target="#" placeholder="Search">
                                 </div>
                             </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-6 col-md-6">                
+                            <div class="col-lg-4 col-md-4"><label>จำนวนสินค้าออก</label><label>AMOUNT OF CARGO TO BE LOADED</label></div>
+                            <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
                         </div> 
-                        <div class="form-group"> 
+                        <div class="col-lg-6 col-md-6"> 
                             <div class="col-lg-1 col-md-1"></div>
                             <div class="col-lg-3 col-md-3"><label>รายการสินค้า </label><label>DISCRIPTION OF CARGO</label></div>
                             <div class="col-lg-8 col-md-8">
@@ -239,8 +240,8 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">                
-                                    <div class="col-lg-4 col-md-4"><label>จำนวนคนโดยสารขาออก</label><br><label>DEPARTTURE PASSENGERS</label></div>
-                                    <div class="col-lg-8 col-md-8"><input class="form-control" type="text" ></div>
+                                    <div class="col-lg-5 col-md-5"><label>จำนวนคนโดยสารขาออก</label><br><label>DEPARTTURE PASSENGERS</label></div>
+                                    <div class="col-lg-7 col-md-7"><input class="form-control" type="text" ></div>
                                     <div class="col-lg-12 col-md-12 text-right">
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -386,8 +387,10 @@
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>                    
                         </div> 
-                        <div class="col-lg-12 col-md-12 text-right">
+                        <div class="form-group">
+                            <div class="col-lg-12 col-md-12 text-right"> 
                             <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
                         </div>   
                     </div>
                 </form>
