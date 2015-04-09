@@ -1,6 +1,6 @@
 <ul class="nav navbar-nav pull-left">
         <li class="">
-                <a href="./sign-in">
+                <a href="{{ URL::to('/customer/index') }}">
                         <i class="fa fa-home"></i> 
                         Home
                 </a>

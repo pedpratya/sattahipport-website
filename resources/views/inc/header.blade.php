@@ -1,5 +1,5 @@
 <h1 id="site-logo">
-	<a href="./index.html">
+	<a href="{{ URL::to('/customer/index') }}">
 		<img src="{{ asset('img/logos/logo.png') }}" alt="Site Logo" />
 	</a>
 </h1>	

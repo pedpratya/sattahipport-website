@@ -60,7 +60,21 @@
 <script src="{{ asset('js/libs/jquery-ui-1.9.2.custom.min.js') }}"></script>
 <script src="{{ asset('js/libs/bootstrap.min.js') }}"></script>
 
+<script src="{{ asset('js/plugins/icheck/jquery.icheck.js') }}"></script>
+<script src="{{ asset('js/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+<script src="{{ asset('js/plugins/timepicker/bootstrap-timepicker.js') }}"></script>
+<script src="{{ asset('js/plugins/simplecolorpicker/jquery.simplecolorpicker.js') }}"></script>
+<script src="{{ asset('js/plugins/select2/select2.js') }}"></script>
+<script src="{{ asset('js/plugins/autosize/jquery.autosize.min.js') }}"></script>
+<script src="{{ asset('js/plugins/textarea-counter/jquery.textarea-counter.js') }}"></script>
+<script src="{{ asset('js/plugins/fileupload/bootstrap-fileupload.js') }}"></script>
+<!--modal popup-->
+<script src="{{ asset('js/plugins/magnific/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('js/plugins/howl/howl.js') }}"></script>
+
 <script src="{{ asset('js/App-tamplate.js') }}"></script>
+<script src="{{ asset('js/form/datepicker-class.js') }}"></script>
+
 </body>
 
 </html>

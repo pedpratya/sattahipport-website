@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-    <title>SATTAHIP E-PORT</title>
+    <title>SATTAHIP Web Application</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="">
@@ -106,6 +106,7 @@
 <script src="{{ asset('js/plugins/howl/howl.js') }}"></script>
 
 <script src="{{ asset('js/App-tamplate.js') }}"></script>
+<script src="{{ asset('js/form/datepicker-class.js') }}"></script>
 
 @yield('bottomscript')
 </body>
