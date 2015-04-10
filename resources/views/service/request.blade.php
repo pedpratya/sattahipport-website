@@ -137,11 +137,9 @@
                     <div class="col-lg-6 col-md-6">               
                         <div class="col-lg-4 col-md-4"><label>ตั้งแต่วันที่</label><br><label>FOR THE PERIOD FROM DATE</label></div>
                         <div class="col-lg-8 col-md-8">
-                            <div class="input-group">
-                                <input type="text" class="form-control">
-                                <div class="input-group-btn">
-                                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                                </div>
+                            <div class="input-datepicker input-group date" data-auto-close="true" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                                <input class="form-control" type="text">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                         </div>
                     </div>
@@ -151,7 +149,10 @@
                             <label>TIME</label>
                         </div>  
                         <div class="col-lg-4 col-md-4">
-                            <div class="col-lg-11 col-md-11"><input class="form-control" type="text" ></div>
+                            <div class="input-group bootstrap-timepicker">
+                                <input type="text" class="form-control input-timepicker">
+                                <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                            </div>
                         </div>
                         <div class="col-lg-2 col-md-2">
                                 <div class="col-lg-3 col-md-3"><label>ท่า</label><br><label>PORT</label></div>                                
@@ -432,11 +433,9 @@
                 <div class="form-group">                
                     <div class="col-lg-4 col-md-4"><label>วันที่</label><br><label>DATE</label></div>
                     <div class="col-lg-8 col-md-8">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <div class="input-group-btn">
-                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                            </div>
+                        <div class="input-datepicker input-group date" data-auto-close="true" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
                 </div>
@@ -467,11 +466,9 @@
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-3 col-md-3"><label>วันที่</label><br><label>DATE</label></div>
                     <div class="col-lg-8 col-md-8">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <div class="input-group-btn">
-                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#"><span class="glyphicon glyphicon-calendar"></span></button> 
-                            </div>
+                        <div class="input-datepicker input-group date" data-auto-close="true" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                     </div>
                 </div> 
