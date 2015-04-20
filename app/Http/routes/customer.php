@@ -8,12 +8,6 @@
 
 Route::group(array('prefix' => 'customer'), function() {
 
-    Route::get('index', array(
-    'as' => 'index',
-    function() {
-        return View::make('customer.index');
-    }));
-
     Route::get('information', array(
         'as' => 'information',
         function() {

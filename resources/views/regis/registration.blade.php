@@ -1,4 +1,4 @@
-@extends('layout.master-module')
+@extends('layout.master-not-left-manu')
 @section('content')
 
 <!-- form -->

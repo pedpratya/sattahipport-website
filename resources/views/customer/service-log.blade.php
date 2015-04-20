@@ -1,4 +1,5 @@
-@extends('layout.master-module')
+@extends('layout.content')
+@section('breadcrumbs', Breadcrumbs::render('customer-service-log'))
 
 @section('content')
 <!-- header -->
@@ -79,4 +80,12 @@
       <li><a href="#">&raquo;</a></li>
     </ul>
 </div>
+@stop
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

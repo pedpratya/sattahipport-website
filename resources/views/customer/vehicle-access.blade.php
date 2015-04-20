@@ -1,4 +1,5 @@
-@extends('layout.master-module')
+@extends('layout.content')
+@section('breadcrumbs', Breadcrumbs::render('customer-vehicle-access'))
 
 @section('content')
 
@@ -134,5 +135,13 @@
       <li><a href="#">&raquo;</a></li>
     </ul>
        
+
+@stop
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
 
 @stop

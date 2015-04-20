@@ -1,4 +1,4 @@
-@extends('layout.master-login')
+@extends('layout.master-not-left-manu')
 
 
 @section('content')
@@ -19,10 +19,12 @@
             <img src="{{ asset('img/icon-mainmenu/services-icon.png') }}">
             <div class="box-menu-text-m">บริการ ทพส.ทร.</div>
         </div>
-        <div class="box-menu">
-            <img src="{{ asset('img/icon-mainmenu/userInfo-icon.png') }}">
-            <div class="box-menu-text-m">Registration</div>
-        </div>
+        <a href="{{ URL::to('/regis/registration') }}">
+            <div class="box-menu">
+                <img src="{{ asset('img/icon-mainmenu/userInfo-icon.png') }}">
+                <div class="box-menu-text-m">Registration</div>
+            </div>
+        </a>
         {!! Form::open(['route' => 'sign-in', 'class' => 'form-horizontal']) !!}
 
 <!-- login -->

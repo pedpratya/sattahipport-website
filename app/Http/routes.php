@@ -13,7 +13,13 @@
 
 Route::get('/', 'MainController@signIn');
 
-Route::get('home', 'HomeController@index');
+Route::get('home-manu', array( 'as' => 'home-manu',
+    function() {
+        return View::make('home.index');
+    }
+));
+    
+Route::get('page/{id}', 'MainController@getPage');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

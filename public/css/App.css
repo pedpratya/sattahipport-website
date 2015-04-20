@@ -2758,7 +2758,7 @@ table.dataTable th:active {
 /* @Header */
 #site-logo {
   position: absolute;
-  top: 5px;
+  top: 15px;
   left: 5px;
   z-index: 21;
 }
@@ -2771,7 +2771,7 @@ table.dataTable th:active {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3f3f3f', endColorstr='#ff222222', GradientType=0);
   width: 100%;
-  height: 77px;
+  height: 97px;
   border-bottom: 1px solid #000;
   position: relative;
   z-index: 15;
@@ -3115,11 +3115,23 @@ table.dataTable th:active {
   left: auto;
   top: auto;
 }
+#content-not-leftmanu {
+  background: #FFF;
+  width: auto;
+  min-height: 800px;
+  z-index: 18;
+  padding-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  left: auto;
+  top: auto;
+}
 #content-header {
   position: relative;
-  top: -96px;
+  top: -56px;
   width: 100%;
-  height: 96px;
+  height: 56px;
   margin-bottom: 2em;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#eeeeee));
   background-image: -webkit-linear-gradient(top, #ffffff, 0%, #eeeeee, 100%);
@@ -3148,15 +3160,15 @@ table.dataTable th:active {
   left: 20px;
   margin: 0;
   color: #444;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 96px;
+  line-height: 56px;
   letter-spacing: -2px;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 #content-container {
   position: relative;
-  top: -96px;
+  top: -56px;
   padding: 0 20px;
 }
 #content-container .portlet {
@@ -3170,6 +3182,11 @@ table.dataTable th:active {
 }
 #content-container .row > div .portlet:last-child {
   margin-bottom: 0;
+}
+#content-not-leftmanu-container {
+  position: relative;
+  top: 20px;
+  padding: 0 20px;
 }
 .row.nomargin {
   margin-bottom: 0;

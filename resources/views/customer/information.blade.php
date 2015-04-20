@@ -1,4 +1,6 @@
-@extends('layout.master-module')
+@extends('layout.content')
+@section('breadcrumbs', Breadcrumbs::render('customer-information'))
+
 @section('content')
 
 <!-- form -->
@@ -532,6 +534,10 @@
 </div>  
 @stop
 
-@section('bottomscript')
-  <script src="{{ asset('js/form/test2.js') }}"></script>
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop

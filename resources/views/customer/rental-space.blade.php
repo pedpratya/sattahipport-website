@@ -1,4 +1,5 @@
-@extends('layout.master-module')
+@extends('layout.content')
+@section('breadcrumbs', Breadcrumbs::render('customer-rental-space'))
 
 @section('content')
 
@@ -103,5 +104,12 @@
   </div>
 </div>
 
+@stop
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
 
 @stop

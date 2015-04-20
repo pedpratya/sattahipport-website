@@ -1,4 +1,6 @@
-@extends('layout.master-module')
+@extends('layout.content')
+@section('breadcrumbs', Breadcrumbs::render('customer-port-service'))
+
 @section('content')
 
 <!-- header -->
@@ -100,4 +102,12 @@
     <li><a href="#">7</a></li>
     <li><a href="#">&raquo;</a></li>
   </ul>   
+@stop
+
+@section('modal-content')
+
+@stop
+
+@section('javascript')
+
 @stop
